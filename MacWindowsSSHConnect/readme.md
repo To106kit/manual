@@ -5,6 +5,15 @@
 
 to106ki(t.to106ki@gmail.com)
 
+url: 
+https://zenn.dev/katan/articles/d3aa611964fed3
+https://pc-karuma.net/windows-10-firewall-open-port/
+https://qiita.com/hnw/items/0eeee62ce403b8d6a23c
+https://www.hiramine.com/physicalcomputing/raspberrypi/ssh_connect.html
+https://laboradian.com/win-get-username-and-home-folder/
+https://qiita.com/wakahara3/items/52094d476774f3a2f619
+
+
 ## 2. 改訂履歴
 
 - 1.0:
