@@ -1,9 +1,9 @@
 <!-- omit in toc -->
-# 2021-07-14 株式会社XXXXX様 SIEM on Amazon ES環境設定手順
+# 2021-07-14 MacからWindowsにSSH接続する環境設定手順
 
 ## 1. ドキュメント作成者
 
-CM) のんピ(のんピのメールアドレス)
+to106ki(t.to106ki@gmail.com)
 
 ## 2. 改訂履歴
 
@@ -39,10 +39,8 @@ CM) のんピ(のんピのメールアドレス)
 
 ## 4. このドキュメントの目的・概要
 
-株式会社XXXXX様(以下XXX)のSIEM on Amazon ESの環境設定を行うための手順書。  
-既存お客様環境にはログ集約の仕組みはないため、新規にSIEM on Amazon ESをVPC上にデプロイし、SIEM on Amazon ESにログを集約し、分析する。
+macのノートPCのterminalからWindowsPCへssh接続する際の環境設定を行うための手順書。  
 
-なお、本作業ではSIEM on Amazon ES用AWSアカウント(`123456789012`)以外のAWSアカウント上のリソースからのログ集約は行わない。
 
 設定範囲は以下の通り。  
 
