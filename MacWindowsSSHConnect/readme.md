@@ -5,15 +5,6 @@
 
 to106ki(t.to106ki@gmail.com)
 
-url: 
-https://zenn.dev/katan/articles/d3aa611964fed3
-https://pc-karuma.net/windows-10-firewall-open-port/
-https://qiita.com/hnw/items/0eeee62ce403b8d6a23c
-https://www.hiramine.com/physicalcomputing/raspberrypi/ssh_connect.html
-https://laboradian.com/win-get-username-and-home-folder/
-https://qiita.com/wakahara3/items/52094d476774f3a2f619
-
-
 ## 2. 改訂履歴
 
 - 1.0:
@@ -46,10 +37,11 @@ https://qiita.com/wakahara3/items/52094d476774f3a2f619
   - [15.1. ログイン [想定作業時間: 3分]](#151-ログイン-想定作業時間-3分)
   - [15.2. スイッチロール [想定作業時間: 3分]](#152-スイッチロール-想定作業時間-3分)
 
+
 ## 4. このドキュメントの目的・概要
 
-macのノートPCのterminalからWindowsPCへssh接続する際の環境設定を行うための手順書。  
-
+macのノートPCのterminalからWindowsPCへssh接続する際の環境設定を行うための手順書。
+基本的には、ネット上の情報を試行して実現したため詳細は本書記載のURLに従うこと。
 
 設定範囲は以下の通り。  
 
@@ -57,7 +49,7 @@ macのノートPCのterminalからWindowsPCへssh接続する際の環境設定�
 
 設定するリソースは以下の通り。
 
-- VPC: 1
+<!-- - VPC: 1
 - VPC Flow Logs: 1
 - DHCP Options Sets: 1
 - Subnet: 6
@@ -76,13 +68,13 @@ macのノートPCのterminalからWindowsPCへssh接続する際の環境設定�
 - CloudWatch Logs
 - Kinesis Data Firehose: 2
 - SIEM on Amazon ES: 1
-  - SIEM on Amazon ESをデプロイ時に作成されるリソースは、[SIEM on Amazon ESの公式ドキュメント](https://github.com/aws-samples/siem-on-amazon-elasticsearch-service/blob/main/README_ja.md#%E4%BD%9C%E6%88%90%E3%81%95%E3%82%8C%E3%82%8B-aws-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9)を参照
+  - SIEM on Amazon ESをデプロイ時に作成されるリソースは、[SIEM on Amazon ESの公式ドキュメント](https://github.com/aws-samples/siem-on-amazon-elasticsearch-service/blob/main/README_ja.md#%E4%BD%9C%E6%88%90%E3%81%95%E3%82%8C%E3%82%8B-aws-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9)を参照 -->
 
 ## 5. 前提条件
 
-- [BacklogのWikiに記載したパラメーターシート](URL)をXXX様にレビューしていただいていること。
+<!-- - [BacklogのWikiに記載したパラメーターシート](URL)をXXX様にレビューしていただいていること。
 - XXX様のSIEM on Amazon ES用のAWSアカウント(`123456789012`)で、作業者の作業用のIAM Roleの作成が完了していること。
-- 作業用端末に、[AWS Extend Switch Roles](URL)がインストール済みであり、`cm-XXX-Read`と、`cm-XXX-Admin`にスイッチロールする設定がされていること。
+- 作業用端末に、[AWS Extend Switch Roles](URL)がインストール済みであり、`cm-XXX-Read`と、`cm-XXX-Admin`にスイッチロールする設定がされていること。 -->
 
 ## 6. 作業完了条件
 
@@ -91,36 +83,40 @@ macのノートPCのterminalからWindowsPCへssh接続する際の環境設定�
 
 ## 7. 作業者
 
-CM) のんピ(のんピのメールアドレス)
+to106ki(t.to106ki@gmail.com)
 
 ## 8. 副作業者 (チェッカー)
 
-CM) チバユキ(チバユキさんのメールアドレス)
+to106ki(t.to106ki@gmail.com)
 
 ## 9. 作業場所
 
-岩本町ツインビル 7階
+自宅
 
 ## 10. 作業端末
 
-自端末(MacBook Pro 13-inch, 2020)
+- ホスト端末(HP ENVY TE01-0xxx)
+- ゲスト端末(MacBook Pro 13-inch, 2020)
 
 ## 11. 予定作業時間
 
-2021-07-14 09:00 〜 2021-07-14 16:00
+<!-- 2021-07-14 09:00 〜 2021-07-14 16:00 -->
 
 ## 12. その他制約事項・備考
 
-- [お客様のBacklog](URL)は、IPアドレス制限をしているため、アクセスする際は、[こちらの手順](URL) を参考にVPN接続をすること。
+<!-- - [お客様のBacklog](URL)は、IPアドレス制限をしているため、アクセスする際は、[こちらの手順](URL) を参考にVPN接続をすること。
 - リソースの設定が出来次第、対応するBacklogの課題のステータスを`処理済み`に変更すること。
 - 全ての作業が完了したら、XXX)xx様、XXX)yy様に連絡すること。
-- **意図しない事象に遭遇した場合は、CM)チバユキさんに連絡すること。**
+- **意図しない事象に遭遇した場合は、CM)チバユキさんに連絡すること。** -->
 
 ## 13. 参考情報
 
-- [XXX他プロジェクト(XXXX)のBacklog](URL)
-- [パラメーターシート](URL)
-- [SIEM on Amazon ES公式ドキュメント](https://github.com/aws-samples/siem-on-amazon-elasticsearch-service/blob/main/README_ja.md)
+- [MacからWindowsにSSH接続する方法](https://zenn.dev/katan/articles/d3aa611964fed3)
+- [Windows 10 - ファイアウォールの特定ポート番号の通信を許可する方法](https://pc-karuma.net/windows-10-firewall-open-port/)
+- [SSH通信の接続と切断と終了の方法](https://www.hiramine.com/physicalcomputing/raspberrypi/ssh_connect.html)
+- [「SSHホスト鍵が変わってるよ！」と怒られたときの対処](https://qiita.com/hnw/items/0eeee62ce403b8d6a23c)
+- [【Windows】現在のユーザー名、ホームフォルダーなどを確認する](https://laboradian.com/win-get-username-and-home-folder/)
+- [Macで公開鍵と秘密鍵を生成する方法](https://qiita.com/wakahara3/items/52094d476774f3a2f619)
 
 ## 14. 作業実績
 
